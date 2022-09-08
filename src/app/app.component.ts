@@ -24,4 +24,8 @@ export class AppComponent {
       content: serverData.serverContent
     });
   }
+
+  onChangefirst(){
+    this.serverElements[0].name = 'changed';
+  }
 }

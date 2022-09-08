@@ -9,7 +9,7 @@ import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild, ViewEnc
 export class CockpitComponent implements OnInit {
   newServerName = '';
   newServerContent = '';
-  @ViewChild('serverContentInput') serverContentInput!:ElementRef ;
+  @ViewChild('serverContentInput') serverContentInput!:ElementRef;
   @Output() serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
   @Output() bluePrintCreated = new EventEmitter<{serverName: string, serverContent: string}>();
   constructor() { }
